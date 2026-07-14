@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Terapeuta | CNEHK Gestión académica</title>
+  <link rel="stylesheet" href="../css/dashboard_terapeuta.css">
+</head>
+<body>
+
+  <div class="contenedor-general-aplicacion">
+
+    <!-- barra lateral de navegación -->
+    <nav class="barra-lateral-navegacion" aria-label="Navegación principal">
+      <div>
+        <div class="encabezado-marca-sistema">
+          <img class="icono-marca-sistema" src="../imgs/logo.jpeg" alt="Logo CNEHK Gestión académica">
+          <div class="texto-marca-sistema">
+            <p class="nombre-sistema">CNEHK</p>
+            <p class="descripcion-sistema">Gestión académica</p>
+          </div>
+        </div>
+
+        <div class="lista-modulos-navegacion">
+          <p class="etiqueta-grupo-modulos">Módulos</p>
+          <ul>
+            <li>
+              <a class="enlace-modulo-navegacion" href="dashboard_terapeuta.html" aria-current="page">
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+                <span class="texto-enlace-modulo">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a class="enlace-modulo-navegacion" href="planes_pei.html">
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+                <span class="texto-enlace-modulo">Planes PEI</span>
+              </a>
+            </li>
+            <li>
+              <a class="enlace-modulo-navegacion" href="progreso.html">
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5M4 19h16M8 15v2M12 11v6M16 7v10"/></svg>
+                <span class="texto-enlace-modulo">Progreso</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tarjeta-perfil-usuario-actual">
+        <div class="avatar-iniciales-circular" aria-hidden="true">CR</div>
+        <div class="grupo-nombre-y-rol-usuario texto-perfil-usuario">
+          <p class="nombre-usuario-actual">Carmen Reyes</p>
+          <p class="rol-usuario-actual">Terapeuta</p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- columna principal -->
+    <div class="columna-contenido-derecha">
+
+      <header class="barra-superior-encabezado">
+        <h1 class="titulo-seccion-etiqueta">Dashboard</h1>
+        <div class="tarjeta-perfil-usuario-barra-superior">
+          <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">CR</div>
+          <p class="nombre-usuario-actual">Carmen Reyes</p>
+        </div>
+      </header>
+
+      <main class="area-principal-dashboard">
+
+        <!-- Bienvenida -->
+        <section class="fila-encabezado-bienvenida" aria-label="Bienvenida">
+          <div>
+            <h2>Bienvenida, Carmen</h2>
+            <p class="detalle-secundario-estadistica">Habilidades para la vida</p>
+          </div>
+          <a class="boton-ver-calendario" href="#calendario-terapeuta">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            Ver mi calendario
+          </a>
+        </section>
+
+        <!-- Tarjetas de estadísticas -->
+        <section class="cuadricula-tarjetas-estadisticas" aria-label="Resumen general">
+          <article class="tarjeta-estadistica-resumen">
+            <div class="fila-titulo-icono-estadistica">
+              <p class="titulo-seccion-etiqueta">Estudiantes</p>
+              <span class="icono-circular-estadistica" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+              </span>
+            </div>
+            <p class="numero-destacado-estadistica">9</p>
+            <p class="detalle-secundario-estadistica">3 grupos</p>
+          </article>
+
+          <article class="tarjeta-estadistica-resumen">
+            <div class="fila-titulo-icono-estadistica">
+              <p class="titulo-seccion-etiqueta">PEIs activos</p>
+              <span class="icono-circular-estadistica" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6M9 12h6"/></svg>
+              </span>
+            </div>
+            <p class="numero-destacado-estadistica">5</p>
+            <p class="detalle-secundario-estadistica">2 completados</p>
+          </article>
+
+          <article class="tarjeta-estadistica-resumen">
+            <div class="fila-titulo-icono-estadistica">
+              <p class="titulo-seccion-etiqueta">Sesiones hoy</p>
+              <span class="icono-circular-estadistica" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>
+              </span>
+            </div>
+            <p class="numero-destacado-estadistica">2</p>
+            <p class="detalle-secundario-estadistica">3 grupos</p>
+          </article>
+
+          <article class="tarjeta-estadistica-resumen">
+            <div class="fila-titulo-icono-estadistica">
+              <p class="titulo-seccion-etiqueta">En revisión</p>
+              <span class="icono-circular-estadistica" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+            </div>
+            <p class="numero-destacado-estadistica">2</p>
+            <p class="detalle-secundario-estadistica">requieren atención</p>
+          </article>
+        </section>
+
+        <!-- Contenido secundario - mis grupos + acciones rápidas -->
+        <div class="cuadricula-contenido-secundario">
+
+          <!-- mis grupos -->
+          <section class="columna-mis-grupos" aria-label="Mis grupos">
+            <h2 class="titulo-seccion-etiqueta">Mis grupos</h2>
+
+            <details class="tarjeta-grupo-estudiantes" open>
+              <summary class="encabezado-resumen-grupo">
+                <div>
+                  <p class="nombre-grupo-estudiantes">Habilidades para la vida - A</p>
+                  <p class="horario-y-aula-grupo">
+                    Lunes / Miércoles / Viernes · 9:00 am a 10:30 am ·
+                    <a class="enlace-aula-asignada" href="#aula-terapeutica-1">Aula Terapéutica 1</a>
+                  </p>
+                </div>
+                <div style="display:flex; align-items:center; gap: var(--espaciado-pequeno);">
+                  <span class="contador-estudiantes-grupo">3 estudiantes</span>
+                  <svg class="icono-flecha-expandir-grupo" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
+                </div>
+              </summary>
+              <div class="contenido-detalle-grupo">
+                <table class="tabla-listado-estudiantes">
+                  <caption class="titulo-seccion-etiqueta" style="text-align:left; margin-bottom: 8px;">Estudiantes del grupo Habilidades para la vida - A</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Estudiante</th>
+                      <th scope="col">Edad</th>
+                      <th scope="col">Nivel</th>
+                      <th scope="col">PEIs</th>
+                      <th scope="col">Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sebastián Morales</td>
+                      <td>14 años</td>
+                      <td>Intermedio</td>
+                      <td>2</td>
+                      <td><span class="estado-estudiante-activo">Activo</span></td>
+                    </tr>
+                    <tr>
+                      <td>Valentina Cruz</td>
+                      <td>12 años</td>
+                      <td>Inicial</td>
+                      <td>1</td>
+                      <td><span class="estado-estudiante-activo">Activo</span></td>
+                    </tr>
+                    <tr>
+                      <td>Diego Ramirez</td>
+                      <td>15 años</td>
+                      <td>Avanzado</td>
+                      <td>3</td>
+                      <td><span class="estado-estudiante-activo">Activo</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+
+            <details class="tarjeta-grupo-estudiantes">
+              <summary class="encabezado-resumen-grupo">
+                <div>
+                  <p class="nombre-grupo-estudiantes">Habilidades para la vida - B</p>
+                  <p class="horario-y-aula-grupo">
+                    Martes / Jueves · 11:00 am a 12:30 pm ·
+                    <a class="enlace-aula-asignada" href="#aula-terapeutica-2">Aula Terapéutica 2</a>
+                  </p>
+                </div>
+                <div style="display:flex; align-items:center; gap: var(--espaciado-pequeno);">
+                  <span class="contador-estudiantes-grupo">3 estudiantes</span>
+                  <svg class="icono-flecha-expandir-grupo" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
+                </div>
+              </summary>
+              <div class="contenido-detalle-grupo">
+                <p class="detalle-secundario-estadistica">Expanda este grupo para ver el listado de estudiantes asignados.</p>
+              </div>
+            </details>
+
+            <details class="tarjeta-grupo-estudiantes">
+              <summary class="encabezado-resumen-grupo">
+                <div>
+                  <p class="nombre-grupo-estudiantes">Autonomía Personal - C</p>
+                  <p class="horario-y-aula-grupo">
+                    Lunes / Miércoles · 2:00 pm a 3:30 pm ·
+                    <a class="enlace-aula-asignada" href="#taller-adaptado">Taller Adaptado</a>
+                  </p>
+                </div>
+                <div style="display:flex; align-items:center; gap: var(--espaciado-pequeno);">
+                  <span class="contador-estudiantes-grupo">3 estudiantes</span>
+                  <svg class="icono-flecha-expandir-grupo" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
+                </div>
+              </summary>
+              <div class="contenido-detalle-grupo">
+                <p class="detalle-secundario-estadistica">Expanda este grupo para ver el listado de estudiantes asignados.</p>
+              </div>
+            </details>
+          </section>
+
+          <!-- acciones rápidas y PEIs en curso -->
+          <aside class="columna-acciones-y-progreso" aria-label="Acciones rápidas y progreso">
+            <h2 class="titulo-seccion-etiqueta">Acciones rápidas</h2>
+
+            <a class="boton-primario-institucional boton-accion-con-icono" href="planes_pei.html#nuevo-pei">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              <span>
+                <span class="titulo-accion-boton">Nuevo PEI</span>
+                <span class="descripcion-accion-boton">Crear plan individualizado</span>
+              </span>
+            </a>
+
+            <a class="boton-secundario-institucional boton-accion-con-icono" href="progreso.html#registrar">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              <span>
+                <span class="titulo-accion-boton">Registrar progreso</span>
+                <span class="descripcion-accion-boton">Subir observación y avance</span>
+              </span>
+            </a>
+
+            <div class="tarjeta-peis-en-curso">
+              <p class="titulo-seccion-etiqueta">PEIs en curso</p>
+
+              <div class="fila-pei-individual-progreso">
+                <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">SM</div>
+                <div class="detalle-pei-individual">
+                  <div class="fila-nombre-pei-y-porcentaje">
+                    <p class="nombre-plan-pei">Cocina adaptada</p>
+                    <span class="porcentaje-avance-pei">65%</span>
+                  </div>
+                  <p class="nombre-estudiante-pei">Sebastián Morales</p>
+                  <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso de Sebastián Morales en Cocina adaptada">
+                    <div class="relleno-barra-progreso-pei" style="width: 65%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fila-pei-individual-progreso">
+                <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">VC</div>
+                <div class="detalle-pei-individual">
+                  <div class="fila-nombre-pei-y-porcentaje">
+                    <p class="nombre-plan-pei">Cocina adaptada</p>
+                    <span class="porcentaje-avance-pei">30%</span>
+                  </div>
+                  <p class="nombre-estudiante-pei">Valentina Cruz</p>
+                  <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso de Valentina Cruz en Cocina adaptada">
+                    <div class="relleno-barra-progreso-pei nivel-medio" style="width: 30%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fila-pei-individual-progreso">
+                <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">DR</div>
+                <div class="detalle-pei-individual">
+                  <div class="fila-nombre-pei-y-porcentaje">
+                    <p class="nombre-plan-pei">Higiene y autocuidado avanzado</p>
+                    <span class="porcentaje-avance-pei">80%</span>
+                  </div>
+                  <p class="nombre-estudiante-pei">Diego Ramirez</p>
+                  <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso de Diego Ramirez en Higiene y autocuidado avanzado">
+                    <div class="relleno-barra-progreso-pei" style="width: 80%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+</body>
+</html>

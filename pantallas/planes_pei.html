@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes PEI | CNEHK Gestión académica</title>
+  <link rel="stylesheet" href="../css/planes_pei.css">
+</head>
+<body>
+
+  <div class="contenedor-general-aplicacion">
+
+    <!-- barra lateral de navegación -->
+    <nav class="barra-lateral-navegacion" aria-label="Navegación principal">
+      <div>
+        <div class="encabezado-marca-sistema">
+          <img class="icono-marca-sistema" src="../imgs/logo.jpeg" alt="Logo CNEHK Gestión académica">
+          <div class="texto-marca-sistema">
+            <p class="nombre-sistema">CNEHK</p>
+            <p class="descripcion-sistema">Gestión académica</p>
+          </div>
+        </div>
+
+        <div class="lista-modulos-navegacion">
+          <p class="etiqueta-grupo-modulos">Módulos</p>
+          <ul>
+            <li>
+              <a class="enlace-modulo-navegacion" href="dashboard_terapeuta.html">
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+                <span class="texto-enlace-modulo">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a class="enlace-modulo-navegacion" href="planes_pei.html" aria-current="page">
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+                <span class="texto-enlace-modulo">Planes PEI</span>
+              </a>
+            </li>
+            <li>
+              <a class="enlace-modulo-navegacion" href="progreso.html">
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5M4 19h16M8 15v2M12 11v6M16 7v10"/></svg>
+                <span class="texto-enlace-modulo">Progreso</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tarjeta-perfil-usuario-actual">
+        <div class="avatar-iniciales-circular" aria-hidden="true">CR</div>
+        <div class="grupo-nombre-y-rol-usuario texto-perfil-usuario">
+          <p class="nombre-usuario-actual">Carmen Reyes</p>
+          <p class="rol-usuario-actual">Terapeuta</p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- columna principal -->
+    <div class="columna-contenido-derecha">
+
+      <header class="barra-superior-encabezado">
+        <h1 class="titulo-seccion-etiqueta">Planes PEI</h1>
+        <div class="tarjeta-perfil-usuario-barra-superior">
+          <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">CR</div>
+          <p class="nombre-usuario-actual">Carmen Reyes</p>
+        </div>
+      </header>
+
+      <main class="area-principal-planes-pei">
+
+        <!-- enncabezado de la sección -->
+        <section class="fila-encabezado-planes-pei" aria-label="Resumen de planes PEI">
+          <div>
+            <h2>Planes educativos individualizados</h2>
+            <p class="detalle-secundario-estadistica">5 activos · 8 total</p>
+          </div>
+          <a class="boton-nuevo-pei" href="#formulario-nuevo-pei">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            Nuevo PEI
+          </a>
+        </section>
+
+        <!-- Barra de búsqueda y filtros -->
+        <section class="barra-busqueda-y-filtros" aria-label="Buscar y filtrar planes">
+          <div class="campo-busqueda-estudiante-plan">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+            <label for="entrada-busqueda-estudiante-plan" class="etiqueta-oculta-accesible">Buscar estudiante o plan</label>
+            <input type="search" id="entrada-busqueda-estudiante-plan" placeholder="Buscar estudiante o plan">
+          </div>
+
+          <div class="grupo-filtros-estado-pei" role="group" aria-label="Filtrar por estado del plan">
+            <button type="button" class="boton-filtro-estado-pei filtro-seleccionado-activo" aria-pressed="true">Todos</button>
+            <button type="button" class="boton-filtro-estado-pei" aria-pressed="false">Activos</button>
+            <button type="button" class="boton-filtro-estado-pei" aria-pressed="false">Pausados</button>
+            <button type="button" class="boton-filtro-estado-pei" aria-pressed="false">Completados</button>
+          </div>
+        </section>
+
+        <!-- Listado de planes PEI -->
+        <section class="listado-planes-pei" aria-label="Listado de planes educativos individualizados">
+
+          <details class="tarjeta-plan-pei-individual" open>
+            <summary class="encabezado-resumen-plan-pei">
+              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">SM</div>
+              <div class="detalle-nombre-y-estudiante-pei">
+                <p class="nombre-plan-pei-titulo">Cocina adaptada</p>
+                <p class="nombre-estudiante-y-categoria-pei">Sebastián Morales · Habilidades para la vida</p>
+              </div>
+              <div class="resumen-progreso-plan-pei">
+                <p class="porcentaje-avance-plan-pei">65%</p>
+                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Cocina adaptada de Sebastián Morales">
+                  <div class="relleno-barra-progreso-pei nivel-alto" style="width: 65%;"></div>
+                </div>
+                <p class="contador-objetivos-plan-pei">2 / 4 objetivos</p>
+              </div>
+              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
+            </summary>
+
+            <div class="contenido-detalle-plan-pei">
+              <p class="descripcion-completa-plan-pei">Desarrollo de habilidades culinarias básicas con adaptaciones sensoriales para la preparación de alimentos simples.</p>
+
+              <div class="cuadricula-datos-clave-plan-pei">
+                <div class="tarjeta-dato-clave-plan-pei">
+                  <p class="etiqueta-dato-clave-plan-pei">Inicio</p>
+                  <p class="valor-dato-clave-plan-pei">01 marzo 2026</p>
+                </div>
+                <div class="tarjeta-dato-clave-plan-pei">
+                  <p class="etiqueta-dato-clave-plan-pei">Revisión</p>
+                  <p class="valor-dato-clave-plan-pei">30 junio 2026</p>
+                </div>
+                <div class="tarjeta-dato-clave-plan-pei">
+                  <p class="etiqueta-dato-clave-plan-pei">Objetivos</p>
+                  <p class="valor-dato-clave-plan-pei">2/4</p>
+                </div>
+                <div class="tarjeta-dato-clave-plan-pei">
+                  <p class="etiqueta-dato-clave-plan-pei">Progreso</p>
+                  <p class="valor-dato-clave-plan-pei">65%</p>
+                </div>
+              </div>
+
+              <a class="boton-editar-plan-pei" href="#editar-pei-cocina-adaptada-sebastian">Editar PEI</a>
+            </div>
+          </details>
+
+          <details class="tarjeta-plan-pei-individual">
+            <summary class="encabezado-resumen-plan-pei">
+              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">VC</div>
+              <div class="detalle-nombre-y-estudiante-pei">
+                <p class="nombre-plan-pei-titulo">
+                  Cocina adaptada
+                  <span class="etiqueta-estado-plan-pei estado-activo">Activo</span>
+                </p>
+                <p class="nombre-estudiante-y-categoria-pei">Valentina Cruz · Habilidades para la vida</p>
+              </div>
+              <div class="resumen-progreso-plan-pei">
+                <p class="porcentaje-avance-plan-pei">30%</p>
+                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Cocina adaptada de Valentina Cruz">
+                  <div class="relleno-barra-progreso-pei nivel-medio" style="width: 30%;"></div>
+                </div>
+                <p class="contador-objetivos-plan-pei">1 / 3 objetivos</p>
+              </div>
+              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
+            </summary>
+            <div class="contenido-detalle-plan-pei">
+              <p class="detalle-secundario-estadistica">Expanda este plan para ver la descripción completa, fechas y objetivos.</p>
+            </div>
+          </details>
+
+          <details class="tarjeta-plan-pei-individual">
+            <summary class="encabezado-resumen-plan-pei">
+              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">DR</div>
+              <div class="detalle-nombre-y-estudiante-pei">
+                <p class="nombre-plan-pei-titulo">
+                  Higiene y autocuidado avanzado
+                  <span class="etiqueta-estado-plan-pei estado-activo">Activo</span>
+                </p>
+                <p class="nombre-estudiante-y-categoria-pei">Diego Ramirez · Autonomía personal</p>
+              </div>
+              <div class="resumen-progreso-plan-pei">
+                <p class="porcentaje-avance-plan-pei">80%</p>
+                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Higiene y autocuidado avanzado de Diego Ramirez">
+                  <div class="relleno-barra-progreso-pei nivel-alto" style="width: 80%;"></div>
+                </div>
+                <p class="contador-objetivos-plan-pei">4 / 5 objetivos</p>
+              </div>
+              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
+            </summary>
+            <div class="contenido-detalle-plan-pei">
+              <p class="detalle-secundario-estadistica">Expanda este plan para ver la descripción completa, fechas y objetivos.</p>
+            </div>
+          </details>
+
+          <details class="tarjeta-plan-pei-individual">
+            <summary class="encabezado-resumen-plan-pei">
+              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">AF</div>
+              <div class="detalle-nombre-y-estudiante-pei">
+                <p class="nombre-plan-pei-titulo">
+                  Manejo del dinero
+                  <span class="etiqueta-estado-plan-pei estado-activo">Activo</span>
+                </p>
+                <p class="nombre-estudiante-y-categoria-pei">Andres Fuentes · Habilidades para la vida</p>
+              </div>
+              <div class="resumen-progreso-plan-pei">
+                <p class="porcentaje-avance-plan-pei">50%</p>
+                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Manejo del dinero de Andres Fuentes">
+                  <div class="relleno-barra-progreso-pei nivel-medio" style="width: 50%;"></div>
+                </div>
+                <p class="contador-objetivos-plan-pei">2 / 4 objetivos</p>
+              </div>
+              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
+            </summary>
+            <div class="contenido-detalle-plan-pei">
+              <p class="detalle-secundario-estadistica">Expanda este plan para ver la descripción completa, fechas y objetivos.</p>
+            </div>
+          </details>
+
+          <details class="tarjeta-plan-pei-individual">
+            <summary class="encabezado-resumen-plan-pei">
+              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">LM</div>
+              <div class="detalle-nombre-y-estudiante-pei">
+                <p class="nombre-plan-pei-titulo">
+                  Uso del transporte público
+                  <span class="etiqueta-estado-plan-pei estado-pausado">Pausado</span>
+                </p>
+                <p class="nombre-estudiante-y-categoria-pei">Lucía Mendoza · Autonomía personal</p>
+              </div>
+              <div class="resumen-progreso-plan-pei">
+                <p class="porcentaje-avance-plan-pei">70%</p>
+                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Uso del transporte público de Lucía Mendoza">
+                  <div class="relleno-barra-progreso-pei nivel-alto" style="width: 70%;"></div>
+                </div>
+                <p class="contador-objetivos-plan-pei">4 / 6 objetivos</p>
+              </div>
+              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
+            </summary>
+            <div class="contenido-detalle-plan-pei">
+              <p class="detalle-secundario-estadistica">Expanda este plan para ver la descripción completa, fechas y objetivos.</p>
+            </div>
+          </details>
+
+          <details class="tarjeta-plan-pei-individual">
+            <summary class="encabezado-resumen-plan-pei">
+              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">NO</div>
+              <div class="detalle-nombre-y-estudiante-pei">
+                <p class="nombre-plan-pei-titulo">
+                  Rutinas escolares básicas
+                  <span class="etiqueta-estado-plan-pei estado-completado">Completado</span>
+                </p>
+                <p class="nombre-estudiante-y-categoria-pei">Nicolas Orozco · Autonomía personal</p>
+              </div>
+              <div class="resumen-progreso-plan-pei">
+                <p class="porcentaje-avance-plan-pei">100%</p>
+                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Rutinas escolares básicas de Nicolas Orozco">
+                  <div class="relleno-barra-progreso-pei nivel-completado" style="width: 100%;"></div>
+                </div>
+                <p class="contador-objetivos-plan-pei">3 / 3 objetivos</p>
+              </div>
+              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
+            </summary>
+            <div class="contenido-detalle-plan-pei">
+              <p class="detalle-secundario-estadistica">Expanda este plan para ver la descripción completa, fechas y objetivos.</p>
+            </div>
+          </details>
+
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+</body>
+</html>
