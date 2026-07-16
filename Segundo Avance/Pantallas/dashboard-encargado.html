@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CNEHK - Panel del encargado/a legal del sistema de gestión académica">
+    <title>Dashboard - Encargado/a | CNEHK</title>
+    <link rel="stylesheet" href="../css/styles-encargado.css">
+</head>
+
+<body>
+    <div class="app-layout">
+        <!-- SIDEBAR -->
+        <aside class="sidebar" aria-label="Menú de navegación principal">
+            <div class="sidebar__logo">
+                <div class="sidebar__logo-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <img src="../assets/logo.jpeg" alt="Logo CNEHK" class="sidebar__logo-img">
+          </svg>
+                </div>
+                <span class="sidebar__logo-title">CNEHK</span>
+                <span class="sidebar__logo-subtitle">Gestión académica</span>
+            </div>
+
+            <nav class="sidebar__nav" aria-label="Módulos del sistema">
+                <p class="sidebar__nav-label" id="nav-modules-label">Módulos</p>
+                <ul class="sidebar__nav-list" aria-labelledby="nav-modules-label">
+                    <li class="sidebar__nav-item sidebar__nav-item--active">
+                        <a href="dashboard-encargado.html" aria-current="page">Dashboard</a>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <a href="planes-pei.html">Planes PEI</a>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <a href="#">Progreso</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar__user">
+                <div class="sidebar__user-avatar" aria-hidden="true">KB</div>
+                <div class="sidebar__user-info">
+                    <span class="sidebar__user-name">Karol Bolaños</span>
+                    <span class="sidebar__user-role">Encargado/a</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1 class="header__title">Dashboard</h1>
+            <div class="header__user">
+                <div class="header__user-avatar" aria-hidden="true">KB</div>
+                <span class="header__user-label">Karol Bolaños</span>
+            </div>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content" id="main-content">
+            <section class="section-header" aria-label="Encabezado de sección">
+                <div class="section-header__text">
+                    <h2>Bienvenida, Karol</h2>
+                </div>
+                <a href="#" class="btn btn--primary btn--pill" aria-label="Ver mi calendario">
+          📅 Ver calendario
+        </a>
+            </section>
+
+            <!-- ESTUDIANTE A CARGO -->
+            <section class="student-card" aria-label="Estudiante a cargo">
+                <span class="student-card__label">
+          Estudiante a cargo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path>
+          </svg>
+        </span>
+                <h3 class="student-card__name">Sebastián Morales</h3>
+                <p class="student-card__subtitle">PEI(s) Activos</p>
+            </section>
+
+            <div class="content-grid">
+                <!-- COLUMNA DE PROGRESO -->
+                <section class="progress-column" aria-label="Progreso del estudiante">
+                    <div>
+                        <p class="content-section-title">Progreso del estudiante</p>
+                    </div>
+
+                    <div class="performance-card">
+                        <div class="performance-card__header">
+                            <span class="performance-card__title">
+                <span class="performance-card__title-bar" aria-hidden="true"></span>
+                Desempeño
+              </span>
+                            <a href="#" class="performance-card__link">
+                2 PEI(s) activo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </a>
+                        </div>
+
+                        <table class="performance-table" aria-label="Objetivos cumplidos por PEI">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nombre del PEI</th>
+                                    <th scope="col">Objetivos cumplidos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cocina adaptada</td>
+                                    <td>2/4</td>
+                                </tr>
+                                <tr>
+                                    <td>Rutinas escolares básicas</td>
+                                    <td>2/5</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div>
+                        <p class="content-section-title">Notificaciones</p>
+                    </div>
+
+                    <div class="notifications-list">
+                        <article class="notification-card">
+                            <input type="checkbox" id="notif-carmen" class="notification-card__toggle-input">
+                            <label for="notif-carmen" class="notification-card__header">
+                                <span class="notification-card__title">Carmen Reyes</span>
+                                <svg class="notification-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                            </label>
+                            <p class="notification-card__text">Buenos días Sra. Karol, espero se encuentre muy bien. El motivo de este mensaje es coordinar una reunión para realizar una revisión del progreso de Sebastián. Por favor indíqueme cuándo sería posible reunirnos.</p>
+                        </article>
+
+                        <article class="notification-card">
+                            <input type="checkbox" id="notif-reporte" class="notification-card__toggle-input">
+                            <label for="notif-reporte" class="notification-card__header">
+                                <span class="notification-card__title">Reporte</span>
+                                <svg class="notification-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                            </label>
+                            <p class="notification-card__text">El estudiante <strong>Sebastián Morales</strong> completó uno de los objetivos propuestos en el PEI de Cocina adaptada.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- PANEL LATERAL -->
+                <aside class="side-panel" aria-label="Seguimiento y progreso de PEIs">
+                    <div>
+                        <p class="content-section-title">Seguimiento</p>
+                    </div>
+
+                    <div class="action-list">
+                        <a href="#" class="action-card action-card--primary">
+                            <span class="action-card__icon" aria-hidden="true">+</span>
+                            <span class="action-card__text">
+                <span class="action-card__title">Comentarios</span>
+                <span class="action-card__subtitle">Agregar comentarios o observaciones</span>
+              </span>
+                        </a>
+
+                        <a href="#" class="action-card action-card--secondary">
+                            <span class="action-card__icon" aria-hidden="true">+</span>
+                            <span class="action-card__text">
+                <span class="action-card__title">Contacto</span>
+                <span class="action-card__subtitle">Iniciar contacto con terapeuta</span>
+              </span>
+                        </a>
+
+                        <a href="#" class="action-card action-card--primary">
+                            <span class="action-card__icon" aria-hidden="true">+</span>
+                            <span class="action-card__text">
+                <span class="action-card__title">Plan Educativo Individualizado</span>
+                <span class="action-card__subtitle">Solicitar nuevo PEI</span>
+              </span>
+                        </a>
+                    </div>
+
+                    <div class="pei-progress-card">
+                        <p class="pei-progress-card__title">PEIs en curso - Sebastián Morales</p>
+
+                        <div class="pei-progress-item">
+                            <div class="pei-progress-item__header">
+                                <span class="pei-progress-item__name">Cocina adaptada</span>
+                                <span class="pei-progress-item__percentage">65%</span>
+                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso Cocina adaptada 65%">
+                                <div class="progress-bar__fill" style="width: 65%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="pei-progress-item">
+                            <div class="pei-progress-item__header">
+                                <span class="pei-progress-item__name">Rutinas escolares básicas</span>
+                                <span class="pei-progress-item__percentage">40%</span>
+                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso Rutinas escolares básicas 40%">
+                                <div class="progress-bar__fill progress-bar__fill--warning" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <footer class="app-footer">
+                <p>&copy; 2026 CNEHK - Gestión académica. Todos los derechos reservados.</p>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
