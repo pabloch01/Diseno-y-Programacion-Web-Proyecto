@@ -68,16 +68,16 @@
 
       <main class="area-principal-planes-pei">
 
-        <!-- enncabezado de la sección -->
+        <!-- encabezado de la sección -->
         <section class="fila-encabezado-planes-pei" aria-label="Resumen de planes PEI">
           <div>
             <h2>Planes educativos individualizados</h2>
-            <p class="detalle-secundario-estadistica">5 activos · 8 total</p>
+            <p class="detalle-secundario-estadistica" id="estadistica-resumen-planes">5 activos · 8 total</p>
           </div>
-          <a class="boton-nuevo-pei" href="#formulario-nuevo-pei">
+          <button type="button" class="boton-nuevo-pei" id="boton-abrir-nuevo-pei">
             <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             Nuevo PEI
-          </a>
+          </button>
         </section>
 
         <!-- Barra de búsqueda y filtros -->
@@ -89,184 +89,124 @@
           </div>
 
           <div class="grupo-filtros-estado-pei" role="group" aria-label="Filtrar por estado del plan">
-            <button type="button" class="boton-filtro-estado-pei filtro-seleccionado-activo" aria-pressed="true">Todos</button>
-            <button type="button" class="boton-filtro-estado-pei" aria-pressed="false">Activos</button>
-            <button type="button" class="boton-filtro-estado-pei" aria-pressed="false">Pausados</button>
-            <button type="button" class="boton-filtro-estado-pei" aria-pressed="false">Completados</button>
+            <button type="button" class="boton-filtro-estado-pei filtro-seleccionado-activo" data-filtro="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="boton-filtro-estado-pei" data-filtro="activo" aria-pressed="false">Activos</button>
+            <button type="button" class="boton-filtro-estado-pei" data-filtro="pausado" aria-pressed="false">Pausados</button>
+            <button type="button" class="boton-filtro-estado-pei" data-filtro="completado" aria-pressed="false">Completados</button>
           </div>
         </section>
 
         <!-- Listado de planes PEI -->
-        <section class="listado-planes-pei" aria-label="Listado de planes educativos individualizados">
-
-          <details class="tarjeta-plan-pei-individual" open>
-            <summary class="encabezado-resumen-plan-pei">
-              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">SM</div>
-              <div class="detalle-nombre-y-estudiante-pei">
-                <p class="nombre-plan-pei-titulo">Cocina adaptada</p>
-                <p class="nombre-estudiante-y-categoria-pei">Sebastián Morales · Habilidades para la vida</p>
-              </div>
-              <div class="resumen-progreso-plan-pei">
-                <p class="porcentaje-avance-plan-pei">65%</p>
-                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Cocina adaptada de Sebastián Morales">
-                  <div class="relleno-barra-progreso-pei nivel-alto" style="width: 65%;"></div>
-                </div>
-                <p class="contador-objetivos-plan-pei">2 / 4 objetivos</p>
-              </div>
-              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
-            </summary>
-
-            <div class="contenido-detalle-plan-pei">
-              <p class="descripcion-completa-plan-pei">Desarrollo de habilidades culinarias básicas con adaptaciones sensoriales para la preparación de alimentos simples.</p>
-
-              <div class="cuadricula-datos-clave-plan-pei">
-                <div class="tarjeta-dato-clave-plan-pei">
-                  <p class="etiqueta-dato-clave-plan-pei">Inicio</p>
-                  <p class="valor-dato-clave-plan-pei">01 marzo 2026</p>
-                </div>
-                <div class="tarjeta-dato-clave-plan-pei">
-                  <p class="etiqueta-dato-clave-plan-pei">Revisión</p>
-                  <p class="valor-dato-clave-plan-pei">30 junio 2026</p>
-                </div>
-                <div class="tarjeta-dato-clave-plan-pei">
-                  <p class="etiqueta-dato-clave-plan-pei">Objetivos</p>
-                  <p class="valor-dato-clave-plan-pei">2/4</p>
-                </div>
-                <div class="tarjeta-dato-clave-plan-pei">
-                  <p class="etiqueta-dato-clave-plan-pei">Progreso</p>
-                  <p class="valor-dato-clave-plan-pei">65%</p>
-                </div>
-              </div>
-
-              <a class="boton-editar-plan-pei" href="#editar-pei-cocina-adaptada-sebastian">Editar PEI</a>
-            </div>
-          </details>
-
-          <details class="tarjeta-plan-pei-individual">
-            <summary class="encabezado-resumen-plan-pei">
-              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">VC</div>
-              <div class="detalle-nombre-y-estudiante-pei">
-                <p class="nombre-plan-pei-titulo">
-                  Cocina adaptada
-                  <span class="etiqueta-estado-plan-pei estado-activo">Activo</span>
-                </p>
-                <p class="nombre-estudiante-y-categoria-pei">Valentina Cruz · Habilidades para la vida</p>
-              </div>
-              <div class="resumen-progreso-plan-pei">
-                <p class="porcentaje-avance-plan-pei">30%</p>
-                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Cocina adaptada de Valentina Cruz">
-                  <div class="relleno-barra-progreso-pei nivel-medio" style="width: 30%;"></div>
-                </div>
-                <p class="contador-objetivos-plan-pei">1 / 3 objetivos</p>
-              </div>
-              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
-            </summary>
-            <div class="contenido-detalle-plan-pei">
-              <p class="detalle-secundario-estadistica">Expanda este plan para ver la descripción completa, fechas y objetivos.</p>
-            </div>
-          </details>
-
-          <details class="tarjeta-plan-pei-individual">
-            <summary class="encabezado-resumen-plan-pei">
-              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">DR</div>
-              <div class="detalle-nombre-y-estudiante-pei">
-                <p class="nombre-plan-pei-titulo">
-                  Higiene y autocuidado avanzado
-                  <span class="etiqueta-estado-plan-pei estado-activo">Activo</span>
-                </p>
-                <p class="nombre-estudiante-y-categoria-pei">Diego Ramirez · Autonomía personal</p>
-              </div>
-              <div class="resumen-progreso-plan-pei">
-                <p class="porcentaje-avance-plan-pei">80%</p>
-                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Higiene y autocuidado avanzado de Diego Ramirez">
-                  <div class="relleno-barra-progreso-pei nivel-alto" style="width: 80%;"></div>
-                </div>
-                <p class="contador-objetivos-plan-pei">4 / 5 objetivos</p>
-              </div>
-              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
-            </summary>
-            <div class="contenido-detalle-plan-pei">
-              <p class="detalle-secundario-estadistica">Expanda este plan para ver la descripción completa, fechas y objetivos.</p>
-            </div>
-          </details>
-
-          <details class="tarjeta-plan-pei-individual">
-            <summary class="encabezado-resumen-plan-pei">
-              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">AF</div>
-              <div class="detalle-nombre-y-estudiante-pei">
-                <p class="nombre-plan-pei-titulo">
-                  Manejo del dinero
-                  <span class="etiqueta-estado-plan-pei estado-activo">Activo</span>
-                </p>
-                <p class="nombre-estudiante-y-categoria-pei">Andres Fuentes · Habilidades para la vida</p>
-              </div>
-              <div class="resumen-progreso-plan-pei">
-                <p class="porcentaje-avance-plan-pei">50%</p>
-                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Manejo del dinero de Andres Fuentes">
-                  <div class="relleno-barra-progreso-pei nivel-medio" style="width: 50%;"></div>
-                </div>
-                <p class="contador-objetivos-plan-pei">2 / 4 objetivos</p>
-              </div>
-              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
-            </summary>
-            <div class="contenido-detalle-plan-pei">
-              <p class="detalle-secundario-estadistica">Expanda este plan para ver la descripción completa, fechas y objetivos.</p>
-            </div>
-          </details>
-
-          <details class="tarjeta-plan-pei-individual">
-            <summary class="encabezado-resumen-plan-pei">
-              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">LM</div>
-              <div class="detalle-nombre-y-estudiante-pei">
-                <p class="nombre-plan-pei-titulo">
-                  Uso del transporte público
-                  <span class="etiqueta-estado-plan-pei estado-pausado">Pausado</span>
-                </p>
-                <p class="nombre-estudiante-y-categoria-pei">Lucía Mendoza · Autonomía personal</p>
-              </div>
-              <div class="resumen-progreso-plan-pei">
-                <p class="porcentaje-avance-plan-pei">70%</p>
-                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Uso del transporte público de Lucía Mendoza">
-                  <div class="relleno-barra-progreso-pei nivel-alto" style="width: 70%;"></div>
-                </div>
-                <p class="contador-objetivos-plan-pei">4 / 6 objetivos</p>
-              </div>
-              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
-            </summary>
-            <div class="contenido-detalle-plan-pei">
-              <p class="detalle-secundario-estadistica">Expanda este plan para ver la descripción completa, fechas y objetivos.</p>
-            </div>
-          </details>
-
-          <details class="tarjeta-plan-pei-individual">
-            <summary class="encabezado-resumen-plan-pei">
-              <div class="avatar-iniciales-circular avatar-iniciales-pequeno" aria-hidden="true">NO</div>
-              <div class="detalle-nombre-y-estudiante-pei">
-                <p class="nombre-plan-pei-titulo">
-                  Rutinas escolares básicas
-                  <span class="etiqueta-estado-plan-pei estado-completado">Completado</span>
-                </p>
-                <p class="nombre-estudiante-y-categoria-pei">Nicolas Orozco · Autonomía personal</p>
-              </div>
-              <div class="resumen-progreso-plan-pei">
-                <p class="porcentaje-avance-plan-pei">100%</p>
-                <div class="pista-barra-progreso-pei" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del plan Rutinas escolares básicas de Nicolas Orozco">
-                  <div class="relleno-barra-progreso-pei nivel-completado" style="width: 100%;"></div>
-                </div>
-                <p class="contador-objetivos-plan-pei">3 / 3 objetivos</p>
-              </div>
-              <svg class="icono-flecha-expandir-plan" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
-            </summary>
-            <div class="contenido-detalle-plan-pei">
-              <p class="detalle-secundario-estadistica">Expanda este plan para ver la descripción completa, fechas y objetivos.</p>
-            </div>
-          </details>
-
+        <section class="listado-planes-pei" id="contenedor-listado-planes" aria-label="Listado de planes educativos individualizados">
         </section>
       </main>
 
     </div>
   </div>
 
+  <!-- Modal Crear / Editar PEI -->
+  <div class="overlay-modal-pei" id="modal-pei" hidden>
+    <div class="caja-modal-pei" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-pei">
+      <div class="encabezado-modal-pei">
+        <h2 class="titulo-modal-pei" id="titulo-modal-pei">Nuevo PEI</h2>
+        <button type="button" class="boton-cerrar-modal-pei" id="boton-cerrar-modal-pei" aria-label="Cerrar">&times;</button>
+      </div>
+
+      <form id="formulario-pei" class="formulario-pei" novalidate>
+        <div class="grupo-campo-formulario">
+          <label for="input-nombre-estudiante">Nombre del estudiante</label>
+          <input type="text" id="input-nombre-estudiante" placeholder="Ej. Sebastián Morales">
+          <span class="mensaje-error-campo" data-error-de="nombreEstudiante"></span>
+        </div>
+
+        <div class="grupo-campo-formulario">
+          <label for="input-titulo-plan">Título del plan</label>
+          <input type="text" id="input-titulo-plan" placeholder="Ej. Cocina adaptada">
+          <span class="mensaje-error-campo" data-error-de="tituloPlan"></span>
+        </div>
+
+        <div class="fila-doble-campo">
+          <div class="grupo-campo-formulario">
+            <label for="select-categoria-pei">Categoría</label>
+            <select id="select-categoria-pei">
+              <option value="">Selecciona una opción</option>
+              <option value="Habilidades para la vida">Habilidades para la vida</option>
+              <option value="Autonomía personal">Autonomía personal</option>
+              <option value="Comunicación">Comunicación</option>
+              <option value="Académico">Académico</option>
+            </select>
+            <span class="mensaje-error-campo" data-error-de="categoria"></span>
+          </div>
+
+          <div class="grupo-campo-formulario">
+            <label for="select-estado-pei">Estado</label>
+            <select id="select-estado-pei">
+              <option value="">Selecciona una opción</option>
+              <option value="activo">Activo</option>
+              <option value="pausado">Pausado</option>
+              <option value="completado">Completado</option>
+            </select>
+            <span class="mensaje-error-campo" data-error-de="estado"></span>
+          </div>
+        </div>
+
+        <div class="fila-doble-campo">
+          <div class="grupo-campo-formulario">
+            <label for="input-fecha-inicio">Fecha de inicio</label>
+            <input type="date" id="input-fecha-inicio">
+            <span class="mensaje-error-campo" data-error-de="fechaInicio"></span>
+          </div>
+          <div class="grupo-campo-formulario">
+            <label for="input-fecha-revision">Fecha de revisión</label>
+            <input type="date" id="input-fecha-revision">
+            <span class="mensaje-error-campo" data-error-de="fechaRevision"></span>
+          </div>
+        </div>
+
+        <div class="fila-doble-campo">
+          <div class="grupo-campo-formulario">
+            <label for="input-objetivos-totales">Total de objetivos</label>
+            <input type="number" id="input-objetivos-totales" min="1" max="20">
+            <span class="mensaje-error-campo" data-error-de="objetivosTotales"></span>
+          </div>
+          <div class="grupo-campo-formulario">
+            <label for="input-objetivos-completados">Objetivos completados</label>
+            <input type="number" id="input-objetivos-completados" min="0">
+            <span class="mensaje-error-campo" data-error-de="objetivosCompletados"></span>
+          </div>
+        </div>
+
+        <div class="grupo-campo-formulario">
+          <label for="input-descripcion-pei">Descripción</label>
+          <textarea id="input-descripcion-pei" rows="3" placeholder="Describe brevemente el plan..."></textarea>
+          <span class="mensaje-error-campo" data-error-de="descripcion"></span>
+        </div>
+
+        <div class="pie-formulario-pei">
+          <button type="button" class="boton-secundario-formulario" id="boton-cancelar-formulario-pei">Cancelar</button>
+          <button type="submit" class="boton-primario-formulario">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de confirmación para eliminar -->
+  <div class="overlay-modal-pei" id="modal-confirmacion-eliminar" hidden>
+    <div class="caja-modal-pei caja-modal-confirmacion" role="dialog" aria-modal="true">
+      <div class="encabezado-modal-pei">
+        <h2 class="titulo-modal-pei">Eliminar plan PEI</h2>
+      </div>
+      <p id="texto-confirmacion-eliminar"></p>
+      <div class="pie-formulario-pei">
+        <button type="button" class="boton-secundario-formulario" id="boton-cancelar-eliminar">Cancelar</button>
+        <button type="button" class="boton-eliminar-plan-pei" id="boton-confirmar-eliminar">Eliminar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notificaciones -->
+  <div class="contenedor-notificaciones" id="contenedor-notificaciones" aria-live="polite"></div>
+
+  <script src="../js/planes_pei.js"></script>
 </body>
 </html>
