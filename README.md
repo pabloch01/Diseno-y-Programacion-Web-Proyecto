@@ -14,24 +14,24 @@ Estrategia de trabajar: Al comenzar el desarrollo del proyecto utilizando como b
 
 Instrucciones para abrir y ejecutar el proyecto: Se debe descargar la carpeta comprimida titulada "Producto final" la cual se encuentra en el apartado main del repositorio. Una vez se cuenta con la carpeta descargada, será necesario descomprimirla (extraerla) para abrirla y acceder al archivo HTML llamado "Gestión Integral - Hellen Keller", el cual cumple la función de mostrar la pantalla de inicio de sesión de la página, comenzando así el flujo de navegación
 
-Funcionalidades implementadas:
-├── Manejo de eventos y DOM (Click, submit, input/change. Crear/editar/eliminar elementos)
-├── Formularios con validación (Campos requeridos, formatos (correo, contraseñas, números), mensajes de error/éxito.)
-├── Login simulado (rol/usuario)
-├── CRUD simulado (crear y listar; editar o eliminar)
+Funcionalidades implementadas:\
+├── Manejo de eventos y DOM (Click, submit, input/change. Crear/editar/eliminar elementos)\
+├── Formularios con validación (Campos requeridos, formatos (correo, contraseñas, números), mensajes de error/éxito.)\
+├── Login simulado (rol/usuario)\
+├── CRUD simulado (crear y listar; editar o eliminar)\
 └── Búsqueda/filtro de listas
 
-Estructura de archivos JS: Cada pantalla tiene su propio archivo JS con la lógica que le corresponde. El módulo de Login además usa un archivo de utilidades compartido para evitar duplicar las validaciones en cada pantalla.
-Producto Final/Front End Hellen Keller/js/
-├── validaciones-login.js   → compartido por las 6 pantallas con formulario
-│                             (validacion de correo/contraseña, notificaciones,
-│                             mensajes de error)
-├── registro.js             → registro.html
-├── identificarse.js        → identificarse.html
-├── tipo-usuario.js         → tipo-usuario.html
-├── actualizar-contrasena.js → actualizar-contrasena.html
-├── restablecer-contrasena.js → restablecer-contrasena.html
-├── restablecer-nueva.js     → restablecer-nueva.html
-├── gest-prog.js        → gest-prog.html   (CRUD de programas educativos)
-├── gest-users.js       → gest-users.html  (CRUD de usuarios)
-└── planes_pei.js        → planes_pei.html  (gestión de PEIs)
+Estructura de archivos JS: Cada pantalla tiene su propio archivo JS con la lógica que le corresponde. El módulo de Login además usa un archivo de utilidades compartido para evitar duplicar las validaciones en cada pantalla.\
+Producto Final/Front End Hellen Keller/js/\
+├── validaciones-login.js   → compartido por las 6 pantallas con formulario\
+│                             (validacion de correo/contraseña, notificaciones,\
+│                             mensajes de error)\
+├── registro.js             → registro.html\
+├── identificarse.js        → identificarse.html\
+├── tipo-usuario.js         → tipo-usuario.html\
+├── actualizar-contrasena.js → actualizar-contrasena.html\
+├── restablecer-contrasena.js → restablecer-contrasena.html\
+├── restablecer-nueva.js     → restablecer-nueva.html\
+├── gest-prog.js        → gest-prog.html   (CRUD de programas educativos)\
+├── gest-users.js       → gest-users.html  (CRUD de usuarios)\
+└── planes_pei.js        → planes_pei.html  (gestión de PEIs)\
