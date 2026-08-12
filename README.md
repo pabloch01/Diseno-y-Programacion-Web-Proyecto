@@ -12,7 +12,7 @@ Descripcion del proyecto y alcance: El Centro Nacional de Educación Hellen Kell
 
 Estrategia de trabajar: Al comenzar el desarrollo del proyecto utilizando como base los wireframes creados, se pretende separar las funcionalidades de la pagina en branches nombradas tras los usuarios de la pagina, esto con el fin de garantizar un trabajo ordenado y sin conflictos. Se realizarán commits una vez se logre completar la funcionalidad de por lo menos una de las secciones de los distintos branches. Una vez los branches para todos los usuarios se encuentren en su versión final, se publicará la versión completa de la pagina en el apartado main del repositorio.
 
-Instrucciones para abrir y ejecutar el proyecto: Se debe descargar la carpeta comprimida titulada "Producto final" la cual se encuentra en el apartado main del repositorio. Una vez se cuenta con la carpeta descargada, será necesario descomprimirla (extraerla) para abrirla y acceder al archivo HTML llamado "Gestión Integral - Hellen Keller", el cual cumple la función de mostrar la pantalla de inicio de sesión de la página, comenzando así el flujo de navegación
+Instrucciones para abrir y ejecutar el proyecto: Se debe descargar la carpeta comprimida titulada "Producto final" la cual se encuentra en el apartado main del repositorio. Una vez se cuenta con la carpeta descargada, será necesario descomprimirla (extraerla) para abrirla y acceder al archivo HTML llamado "Gestión Integral - Hellen Keller", el cual cumple la función de mostrar la pantalla de inicio de sesión de la página, comenzando así el flujo de navegación.
 
 Funcionalidades implementadas:\
 ├── Manejo de eventos y DOM (Click, submit, input/change. Crear/editar/eliminar elementos)\
