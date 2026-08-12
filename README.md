@@ -21,7 +21,8 @@ Funcionalidades implementadas:\
 ├── CRUD simulado (crear y listar; editar o eliminar)\
 └── Búsqueda/filtro de listas
 
-Estructura de archivos JS: Cada pantalla tiene su propio archivo JS con la lógica que le corresponde. El módulo de Login además usa un archivo de utilidades compartido para evitar duplicar las validaciones en cada pantalla.\\
+Estructura de archivos JS: Cada pantalla tiene su propio archivo JS con la lógica que le corresponde. El módulo de Login además usa un archivo de utilidades compartido para evitar duplicar las validaciones en cada pantalla.
+
 Producto Final/Front End Hellen Keller/js/\
 ├── validaciones-login.js   → compartido por las 6 pantallas con formulario\
 │                             (validacion de correo/contraseña, notificaciones,\
